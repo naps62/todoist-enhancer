@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Todoist Enhancer",
+  "author": "Miguel Palhas <mpalhas@gmail.com>",
+  "version": "0.1",
+
+  "description": "Opinionated tweaks to Todoist's interface",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.todoist.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
